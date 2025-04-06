@@ -1,0 +1,115 @@
+name: 'subhan' # string
+age: 17 # int
+status: on # bool
+weight: 135.67  # float
+
+# primitive data types
+
+numbers: [1, 2, 3, 4]
+
+server: 
+ port: 8080
+ hostname: example
+ database: local 
+ status: 
+
+
+7-8.30 aws
+8.30-10 dev1 new
+10-12 dev1
+12-2 dev2
+
+
+
+# object
+# Human-Readable 
+# Portable 
+# Easy Implemention 
+# case sensitive 
+
+...
+Name : 'subhan'
+name : Ali
+
+---
+Name : Ali
+
+# Key-value mapping indendation 
+
+# :
+# - 
+# ,
+# {
+# }
+# [
+# ]
+
+# list identation
+
+animals: # flow style 
+ - dog
+ - cat
+ - sheep
+
+
+Animals: [cat, dog, goat] # block style
+
+# yes/no , on/off , true/false 
+
+student2 : John
+  hobbies:
+   - music
+   - tennis
+   - pilates
+
+student1:
+  name: John
+  hobbies: 
+    - music
+    - tennis
+    - pilates
+
+student2: 
+  name: Ali
+
+
+datacenter: {location: US, people: 37}
+Animals: [cat, dog, goat]
+
+student1 : {
+  name: John
+  hobbies: 
+   - cricket
+}
+
+
+array2: [[yaml1, yaml2, yaml3],[yaml1, yaml2, yaml3]]
+
+
+mysqldatbase:
+ hostname: localhost
+ port: 3012
+
+
+ #school ,3 class -> 3 students -> age, name, grade, pass?
+ # sports 3 sports -> 3 players -> age, name, score, qualify
+ # fruits list 
+ # list phone name - spec -> 
+# --------
+
+ # End config 
+
+ # environment variable 
+ # PATH 
+
+ defaults: &defaults
+  timeout: 30
+  max_retries: 3
+
+production: 
+ <<: *defaults
+ # timeout: 30
+  # max_retries: 3
+
+Development: 
+ <<: *defaults
