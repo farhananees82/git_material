@@ -3,6 +3,11 @@
 def pkr_to_usd(pkr):
     rate = 250
     amount = pkr / rate
+    return amount# pkr to gbp -> 
+
+def pkr_to_gbp(pkr):
+    rate = 300
+    amount = pkr / rate
     return amount
 
 pkr = int(input("Enter the pkr amount: "))
